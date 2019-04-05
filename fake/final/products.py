@@ -1,4 +1,4 @@
 from time import sleep                                                          
                                                                                 
 sleep(5)                                                                       
-print('End of fake final.products script')
+print('final.products fake script completed...')

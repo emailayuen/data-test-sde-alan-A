@@ -1,4 +1,4 @@
 from time import sleep                                                          
                                                                                 
 sleep(3)                                                                       
-print('End of fake tmp.product_categories script')
+print('tmp.product_categories fake script completed...')

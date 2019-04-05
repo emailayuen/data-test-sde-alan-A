@@ -135,6 +135,17 @@ def a3_show_result(master_list):
     for node in master_list:
         print('name: {0}, edges: {1}, level {2}'.format(node.name, len(node.edges), node.level))
 
+def get_max_parallel_run(master_list):
+    '''
+    derive max number of processes that will run at any one time
+    '''
+    jobs = []
+    [jobs.append(node.level) for node in master_list]
+    freq = {} 
+    for items in jobs: 
+        freq[items] = jobs.count(items)
+    max_key = max(freq, key=freq.get)
+    return freq[max_key]
 
 if __name__ == '__main__':   
     print(
@@ -167,9 +178,9 @@ if __name__ == '__main__':
     master_table = build_master_table(schemas=['tmp', 'final'])
     master_table_graph_sync = build_master_table_ordered_sync(master_table)
     #a2_show_result(master_table_graph_sync)
-    # get and run scripts
-    processes = [get_fake_process(node) for node in master_table_graph_sync]  #get_fake_processes(master_table_graph_sync) 
-    pool = Pool(processes=1) #synchronous
+    # run scripts sequentially...
+    processes = [get_fake_process(node) for node in master_table_graph_sync]
+    pool = Pool(processes=1) # single process
     print('\nBegin synchronous processing...')
     pool.map(run_process, processes)
     print(
@@ -181,7 +192,7 @@ if __name__ == '__main__':
             2. Every node (table) is assigned a "level" which will determine when it can be run
             3. Levels are run sequentially: run level 1, ...then level 2, ..then level 3 etc.. 
             4. However, all tables within the same "level" can be run in parallel
-            5. Run dummy scripts based on master table sequence and "levels"
+            5. Run dummy scripts based on master table sequence and levels
             6. Scripts will run utilising parallelism for this excercise
         
         ##############################################################################################
@@ -189,8 +200,9 @@ if __name__ == '__main__':
     )
     master_table_graph_levels = build_master_table_levels(master_table_graph_sync)
     #a3_show_result(master_table_graph_levels)
-    # get and run scripts
-    pool = Pool(processes=5) #asynchronous
+    # run scripts utilising parallism...
+    processor_count = get_max_parallel_run(master_table_graph_levels)
+    pool = Pool(processes=processor_count) # multi processing
     max_level = master_table_graph_levels[len(master_table_graph_levels)-1].level
     current_level = 1
     while current_level <= max_level:

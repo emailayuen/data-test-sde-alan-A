@@ -159,7 +159,7 @@ if __name__ == '__main__':
             2. Base dependency logic loosely on graph algorithms (...concept of nodes and edges)
             3. A table will be represented as node, and dependencies is the edge(s)
             4. Run dummy scripts in the correct order based on master table sequence
-           5. Scripts will run sychronously one after another for this excercise
+            5. Scripts will run sychronously one after another for this excercise
         
         ##############################################################################################
          '''

@@ -11,7 +11,7 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 To run the program...
 
-  1. Pull down the source code to your local machine and navigate to the project folder.
+  1. Pull down the source code to your local machine and navigate to the main project folder.
   
   ```
   Example:

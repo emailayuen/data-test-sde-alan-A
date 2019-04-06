@@ -8,7 +8,7 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 ## Setup
 
-To run the code, please follow the instructions below.
+To run the program, please follow the instructions below.
 
   1. Pull down the code to your local machine.
   

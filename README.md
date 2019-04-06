@@ -4,7 +4,7 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 ## Requirements
 
-* Python 3.7(https://www.python.org/downloads/) (3.6 should suffice but untested)
+* [Python 3.7](https://www.python.org/downloads/) (3.6 should suffice but untested)
 
 
 ## Setup

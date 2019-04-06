@@ -6,7 +6,8 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 * Python 3.7 (3.6 should suffice but untested)
 
-## How To Run Locally
+
+## Setup
 
 To run the program...
 

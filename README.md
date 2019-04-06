@@ -24,6 +24,6 @@ To run the program, please follow the instructions below.
 ```
   Example:
   
-  C:\git\data-test-sde-alan-A> C:\Users\alan\AppData\Local\Programs\Python\Python37-32\python.exe C:\git\data-test-sde-alan-A\main.py
+  C:\git\data-test-sde-alan-A>python main.py
   
   ```

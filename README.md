@@ -6,11 +6,11 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 * Python 3.7 (3.6 should suffice but untested)
 
-## Setup
+## How To Run Locally
 
-To run the program, please follow the instructions below.
+To run the program...
 
-  1. Pull down the solution to your local machine and navigate to the project folder.
+  1. Pull down the source code to your local machine and navigate to the project folder.
   
   ```
   Example:

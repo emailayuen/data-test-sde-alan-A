@@ -10,6 +10,13 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 To run the code, please follow the instructions below.
 
-  1. If you do not have a working Python 3.7 interpreter, instructions to download and setup can be found [here](https://www.python.org/downloads/).
+  1. Pull down the code to your local machine and navigate to the project folder.
+  ```
+  Example:
+  
+  cd C:\git\data-test-sde-alan-A
+  
+  ```
+  2. If you do not have a working Python 3.7 interpreter, instructions to download and setup can be found [here](https://www.python.org/downloads/).
 
 

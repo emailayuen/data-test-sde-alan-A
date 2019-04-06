@@ -20,11 +20,11 @@ To run the program...
   
   ```
   
-  2. To run, pass the path of the program as an argument to the Python interpreter. If you do not have a working Python 3.7 interpreter, instructions to download and setup can be found [here](https://www.python.org/downloads/).
+  2. To run, simply pass the main program as an argument to the Python interpreter. If you do not have a working Python 3.7 interpreter, instructions to download and setup can be found [here](https://www.python.org/downloads/).
 
 ```
   Example:
   
-  C:\git\data-test-sde-alan-A>python main.py
+  C:\git\data-test-sde-alan-A> python main.py
   
   ```

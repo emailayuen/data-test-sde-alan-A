@@ -4,7 +4,25 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 ## Approach
 
-A1: Create a basic data structure that captures all tables and their dependent tables.
+A1: Create a json data structure that captures all tables and their dependent tables.
+ ```
+  Example:
+  
+  {
+    "final.products": [
+      "tmp.products",
+      "tmp.variants"
+    ],
+    "tmp.inventory_items": [
+      "raw.inventory_items"
+    ],
+    "tmp.item_purchase_prices": [
+      "raw.purchase_line_items",
+      "raw.purchase_items"
+    ]
+}
+  
+  ```
 
 ## Prerequisites
 

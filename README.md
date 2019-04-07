@@ -22,7 +22,7 @@ A1: Create a json tree structure that captures all tables and their dependencies
     ]
 }
   ```
-A2: Work out the correct sequence in which these tables need to be run, by representing the above tree structure using a Graph data structure (nodes and edges), and writing an algorithm that determines the correct order by traversing up the tree.
+A2: Work out the correct sequence in which these tables need to be run, by representing the above tree structure using a `Graph data structure` (nodes and edges), and writing an algorithm that determines the correct order by traversing up the tree.
 
 A3: Now that we have the sequence in which the tables nee
 

@@ -28,18 +28,18 @@ A3: Finally, we want to take advantage of parallelism by determining which `node
  ```
  Example:
  
- Level 1 (run in parallel):
+ Level 1 (run below in parallel):
   - tmp.product_images
   - tmp.inventory_items
   - tmp.purchase_prices
   - tmp.product_categories
   - tmp.variant_images
   
-  Level 2 (after Level 1 completes, run in parallel):
+  Level 2 (...after last table in Level 1 completes, run below in parallel):
   - tmp.products
   - tmp.variants
   
-  Level 3 (after Level 2 completes, run in parallel):
+  Level 3 (...after last table in Level 2 completes, run below in parallel):
   - final.products
  ```
 

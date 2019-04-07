@@ -4,9 +4,9 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 ## Approach
 
-A1: Create a json data structure that captures all tables and their dependent tables.
+A1: Create a json tree structure that captures all tables and their dependencies by parsing the SQL scripts and extrapolating the required info.
  ```
-  Example:
+  Example output:
   
   {
     "final.products": [
@@ -22,6 +22,10 @@ A1: Create a json data structure that captures all tables and their dependent ta
     ]
 }
   ```
+A2: Work out the correct sequence in which these tables need to be run, by representing the above tree structure using a Graph data structure (nodes and edges), and writing an algorithm that determines the correct order by traversing up the tree.
+
+A3: Now that we have the sequence in which the tables nee
+
 ## Deploy and Run Locally
 
 ### Prerequisites

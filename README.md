@@ -4,7 +4,7 @@ This is a working solution for Sephora SEA data test parts A1, A2 and A3. Part B
 
 ## Approach
 
-A1: Create a json tree structure that captures all tables and their dependencies by parsing the SQL scripts and extrapolating the required info.
+A1: Create a `master` tree structure that captures all tables and their dependencies by parsing the SQL scripts and extrapolating the required info.
  ```
   Example output:
   

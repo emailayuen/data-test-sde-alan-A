@@ -22,13 +22,13 @@ A1: Create a json data structure that captures all tables and their dependent ta
     ]
 }
   ```
+## Deploy and Run Locally
 
-## Prerequisites
+### Prerequisites
 
 * [Python 3.7](https://www.python.org/downloads/) (3.6 should suffice but untested)
 
-
-## Setup
+### Setup
 
 To run the program...
 

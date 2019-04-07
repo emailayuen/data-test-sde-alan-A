@@ -24,7 +24,7 @@ A1: Create a `master tree` structure that captures all tables and their dependen
 ```
 A2: Work out the correct sequence in which these tables have to be run, by representing the `master tree` using a `Graph` data structure (nodes and edges), and writing an algorithm that works out the correct order.
 
-A3: With the correct order in place, we now want to take advantage of parallelism by determining which `nodes(tables)` can be run at the same time, rather than running everything sequentially. To solve this problem, an attribute called `level` is added to each `node(table)` within the `master tree`. All `nodes(tables)` belonging to the same `level` can be run in parallel, but each `level` cannot begin running until the previous level has completed. 
+A3: With the correct running order in place, we now want to take advantage of parallelism by determining which `nodes(tables)` can be run at the same time, rather than running everything sequentially. To solve this problem, an attribute called `level` is added to each `node(table)` within the `master tree`. All `nodes(tables)` belonging to the same `level` can be run in parallel, but each `level` cannot begin running until the previous level has completed. 
  ```
  Example:
  

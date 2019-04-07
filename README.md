@@ -24,7 +24,7 @@ A1: Create a json tree structure that captures all tables and their dependencies
   ```
 A2: Work out the correct sequence in which these tables need to be run, by representing the above tree structure using a `Graph` data structure (nodes and edges), and writing an algorithm that determines the correct order.
 
-A3: With the correct sequencing in place, we now want to take advantage of parallelism and determine which tables can be loaded at the same time, rather than running everything sequentially.
+A3: Finally, we want to take advantage of parallelism and determine which `nodes(tables)` can be loaded at the same time, rather than running everything sequentially. To solve this problem, an attribute called `level` is added to each `node(table)` object.
 
 ## Deploy and Run Locally
 

@@ -21,7 +21,6 @@ A1: Create a json data structure that captures all tables and their dependent ta
       "raw.purchase_items"
     ]
 }
-  
   ```
 
 ## Prerequisites
@@ -39,7 +38,6 @@ To run the program...
   Example:
   
   cd C:\git\data-test-sde-alan-A
-  
   ```
   
   2. To run, simply pass the main program as an argument to the Python interpreter.
@@ -48,5 +46,4 @@ To run the program...
   Example:
   
   C:\git\data-test-sde-alan-A>python main.py
-  
   ```
